@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Details</title>
+		<meta charset="utf-8">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- icon -->
+	<link rel="icon" sizes="144x144" href="https://static.thenounproject.com/png/397639-200.png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="./styledetails.css">
+</head>
+<body>
+		<header>Booking Details</header>
+		
+		<hr>
+
+		<div class="w3-display-middle container">
+			<form>
+		    <label for="name"><strong>Name</strong></label>
+		    <div><input type="text" placeholder="Enter name" name="name" required></div>
+
+		    <label for="contact"><b>Contact No:</b></label>
+		    <div style="margin-left: 10px;">+91<input type="tel" placeholder="" name="contact" required></div>
+
+		    <label for="issue"><b>Issue Date</b></label>
+		    <div><input type="Date" placeholder="" name="issue" required></div>
+
+		    <label for="return"><b>Return Date</b></label>
+		    <div><input type="Date" placeholder="" name="return" required></div>
+
+
+			<button onclick="document.getElementById('id01').style.display='block'">Book Car</button>
+
+		</form>
+		    
+	  	</div>
+
+
+			<div id="id01" class="w3-modal" >
+    <div class="w3-modal-content  w3-card-2" style="height: 200px;width:400px;padding: 10px;border-radius:10px;">
+      <div class="w3-container " >
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <div style="margin-bottom:10px;margin-top: 20px;">Booking Confirmed!</div>
+        <div style="margin-bottom:10px;">You Have Booked *******</div>
+        <div style="margin-top:10px;">For the Duration Issue Date to Return Date</div>
+        <div class="w3-right" style="margin-top: 10px;" > Continue</div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
